@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web design with html and css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <div class="container">
+            <img src="img/evans.png" class="logo">
+            <div class="header-text">
+                <h1>The purpose is of tech is to<br> bring learning to people</h1>
+                <span class="square"></span>
+                <p>this is a responsive wed practice turtorial turtorials
+                </p>
+                <button class="common-btn">Read more</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+
+        </ul>
+    </nav>
+    <img src="img/menu.png" id="menuBtn">
+
+
+    <!-------------about---->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="img/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>We are passionate Web Developers we give a digital solution to your problem kindly reach us for more infomation </p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>Leraning web development demants ...dedication...passion...persistence</h2>
+                <h3>----Evans Mwangangi</h3>
+
+            </div>
+
+        </div>
+    </section>
+    <!----features-->
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="img/pic-1.png">
+                <h4>Learn everywhere</h4>
+                <p>switch between your computer ,tablet or mobile</p>
+            </div>
+            <div class="feature-col"><img src="img/pic-2.png">
+                <h4>Expert Teachers</h4>
+                <p>Learn from industry experts who are passionate about teaching</p>
+            </div>
+            <div class="feature-col"><img src="img/pic-3.png">
+                <h4>unlimited access</h4>
+                <p>choose what you'd like to learn from our extrensive subscription library</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <button class="common-btn">Start Free trial</button>
+        </div>
+    </section>
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse our Top <br> courses</h1>
+                    <span class="square"></span>
+
+                    <p>we offer affordable course ....buy two couses you get another one extra free</p>
+                    <button class="common-btn">View All Courses</button>
+
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="img/course.png">
+            </div>
+
+        </div>
+    </section>
+
+    <!-----------offer-->
+
+
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="img/offer.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>limitless learning <br>limitless possibilities</h1>
+                <span class="square"></span>
+                <p>We are passionate Web Developers we give a digital solution to your problem kindly reach us for more infomation </p>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>Leraning web development demants ...dedication...passion...persistence</h2>
+                <h3>----Evans Mwangangi</h3>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+
+
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+            } else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+</body>
+
+</html>
